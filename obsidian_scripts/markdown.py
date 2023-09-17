@@ -67,6 +67,7 @@ def get_metadata_str(metadata):
     :param metadata: dictionary of metadata
     :return: string of metadata
     """
+    metadata = metadata.copy()
     txt = ""
     txt += f"---\n"
     txt += f"date: {metadata['date']}\n"

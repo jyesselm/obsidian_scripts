@@ -1,0 +1,733 @@
+{
+  "2023_04_21_eterna_libs": {
+    "date": "2023-04-21",
+    "year": "2023",
+    "week": "2023-17",
+    "type": "dir",
+    "path": "$DROPBOX/projects/construct_design/2023_04_21_eterna_libs",
+    "dir-type": "construct-design",
+    "dir-designed-by": "Joe Yesselman",
+    "dir-constructs-codes": [],
+    "dir-constructs": [],
+    "dir-summary": "",
+    "dir-keywords": "",
+    "dir-finished": "NO",
+    "dir-constructs-ordered": "NO",
+    "project": ""
+  },
+  "2023_06_08_kissing_loops": {
+    "date": "2023-06-08",
+    "year": "2023",
+    "week": "2023-24",
+    "type": "dir",
+    "path": "$DROPBOX/projects/construct_design/2023_06_08_kissing_loops",
+    "dir-type": "construct-design",
+    "dir-designed-by": "Joe Yesselman",
+    "dir-constructs-codes": [
+      "C014X",
+      "C014Y",
+      "C014Z",
+      "C0151",
+      "C0152",
+      "C0153"
+    ],
+    "dir-constructs": [
+      "loop-alone",
+      "kl-tether-6",
+      "kl-tether-9",
+      "kl-tether-12",
+      "kl-tether-15",
+      "kl-tether-18"
+    ],
+    "dir-summary": "",
+    "dir-keywords": [
+      "kissing-loop",
+      "tertiary-contact"
+    ],
+    "project": "kissing-loop",
+    "dir-finished": "YES",
+    "dir-constructs-ordered": "YES"
+  },
+  "2023_07_10_copernicus_CNN_blind_test": {
+    "date": "2023-07-10",
+    "year": "2023",
+    "week": "2023-29",
+    "type": "dir",
+    "path": "$DROPBOX/projects/construct_design/2023_07_10_copernicus_CNN_blind_test",
+    "dir-type": "construct-design",
+    "dir-designed-by": "Dan Linford",
+    "dir-constructs-codes": [
+      "C015W",
+      "C015X",
+      "C015Y",
+      "C015Z",
+      "C0161",
+      "C0162",
+      "C0163",
+      "C0164",
+      "C0165",
+      "C0166"
+    ],
+    "dir-constructs": [
+      "copernicus_101_to_109",
+      "copernicus_101_to_109_b",
+      "copernicus_101_to_109_c",
+      "copernicus_110_to_117",
+      "copernicus_110_to_117_b",
+      "copernicus_110_to_117_c",
+      "copernicus_118_to_126",
+      "copernicus_127_to_134",
+      "copernicus_84_to_92",
+      "copernicus_93_to_100"
+    ],
+    "dir-summary": "Blind tests for the new CNN model named 'copernicus' for testing teriary contacts",
+    "dir-keywords": [
+      "deep-learning",
+      "tertiary-contact",
+      "minittr"
+    ],
+    "project": "tertiary-contact-prediction",
+    "dir-finished": "YES",
+    "dir-constructs-ordered": "YES"
+  },
+  "2023_06_16_ttr_m5_top_scans": {
+    "date": "2023-06-16",
+    "year": "2023",
+    "week": "2023-25",
+    "type": "dir",
+    "path": "$DROPBOX/projects/construct_design/2023_06_16_ttr_m5_top_scans",
+    "dir-type": "construct-design",
+    "dir-designed-by": "Dan Linford",
+    "dir-constructs-codes": [
+      "C0156",
+      "C0157",
+      "C0158",
+      "C0159",
+      "C015A"
+    ],
+    "dir-constructs": [
+      "ttr_m5_top_scans_1",
+      "ttr_m5_top_scans_2",
+      "ttr_m5_top_scans_3",
+      "ttr_m5_top_scans_4",
+      "ttr_m5_top_scans_5"
+    ],
+    "dir-summary": "Testing constructs by scanning different 5 motif topologies as uniformingly as possible",
+    "dir-keywords": [
+      "deep-learning",
+      "tertiary-contacts",
+      "CNN"
+    ],
+    "project": "teritary-contact-prediction",
+    "dir-finished": "YES",
+    "dir-constructs-ordered": "YES"
+  },
+  "2022_12_07_mttr_round_2_training": {
+    "date": "2022-12-07",
+    "year": "2022",
+    "week": "2022-50",
+    "type": "dir",
+    "path": "$DROPBOX/projects/construct_design/2022/2022_12_07_mttr_round_2_training",
+    "dir-type": "construct-design",
+    "dir-designed-by": "Joe Yesselman",
+    "dir-constructs-codes": [
+      "C013A",
+      "C013B",
+      "C013C",
+      "C013D"
+    ],
+    "dir-constructs": [
+      "ttr_training_2_motif_lib",
+      "ttr_training_3_motif_lib",
+      "ttr_training_4_motif_lib",
+      "ttr_training_5_motif_lib"
+    ],
+    "dir-summary": "",
+    "dir-keywords": "",
+    "dir-finished": "YES",
+    "dir-constructs-ordered": "YES",
+    "project": "tertiary-contact-prediction"
+  },
+  "2023_02_16_hairpin_deeplearning": {
+    "date": "2023-03-08",
+    "year": "2023",
+    "week": "2023-10",
+    "type": "dir",
+    "path": "$DROPBOX/projects/construct_design/2023_02_16_hairpin_deeplearning",
+    "dir-type": "construct-design",
+    "designed-constructs-codes": [
+      "C014G",
+      "C014H",
+      "C014I",
+      "C014J"
+    ],
+    "designed-constructs": [
+      "hp_deeplearning_10000",
+      "hp_deeplearning_20000",
+      "hp_deeplearning_4000",
+      "hp_deeplearning_7500"
+    ],
+    "designed-by": [
+      "Joe",
+      "Yesselman"
+    ],
+    "keywords": [
+      "deep-learning",
+      "large-library"
+    ],
+    "project": "deep-learning",
+    "dir-designed-by": "Joe Yesselman",
+    "dir-constructs-codes": [
+      "C014G",
+      "C014H",
+      "C014I",
+      "C014J"
+    ],
+    "dir-constructs": [
+      "hp_deeplearning_10000",
+      "hp_deeplearning_20000",
+      "hp_deeplearning_4000",
+      "hp_deeplearning_7500"
+    ],
+    "dir-summary": "Initial look into generating sequences specifically to be used to train a deep learning model. These sequences are simple sets of hairpins",
+    "dir-keywords": [
+      "deep-learning"
+    ],
+    "dir-finished": "YES",
+    "dir-constructs-ordered": "YES"
+  },
+  "2021_07_18_tar_minittrs": {
+    "date": "2021-07-18",
+    "week": "2021-29",
+    "type": "dir",
+    "path": "$DROPBOX/projects_updated/construct_design/2021/2021_07_18_tar_minittrs",
+    "dir-type": "construct-design",
+    "summary": "",
+    "project": ""
+  },
+  "2022_12_06_predictor80_first_libraries": {
+    "date": "2022-12-06",
+    "year": "2022",
+    "week": "2022-50",
+    "type": "dir",
+    "path": "$DROPBOX/projects/construct_design/2022/2022_12_06_predictor80_first_libraries",
+    "dir-type": "construct-design",
+    "dir-designed-by": "Joe Yesselman",
+    "dir-constructs-codes": [
+      "C0136",
+      "C0137",
+      "C0138",
+      "C0139"
+    ],
+    "dir-constructs": [
+      "predictor80_lib_1",
+      "predictor80_lib_2",
+      "predictor80_lib_4",
+      "predictor80_lib_5"
+    ],
+    "dir-summary": "",
+    "dir-keywords": "",
+    "dir-finished": "YES",
+    "dir-constructs-ordered": "YES",
+    "project": "tertiary-contact-prediction"
+  },
+  "2023_02_24_galileo_small_lib": {
+    "date": "2023-02-24",
+    "year": "2023",
+    "week": "2023-9",
+    "type": "dir",
+    "path": "$DROPBOX/projects/construct_design/2023_02_24_galileo_small_lib",
+    "dir-type": "construct-design",
+    "dir-designed-by": "Dan Linford",
+    "dir-constructs-codes": [
+      "C0144",
+      "C0145",
+      "C0146",
+      "C0147",
+      "C0148",
+      "C0149",
+      "C014A",
+      "C014B",
+      "C014C",
+      "C014D",
+      "C014E",
+      "C014F"
+    ],
+    "dir-constructs": [
+      "galileo_largest_ln_hc_l_100_to_105",
+      "galileo_largest_ln_hc_l_85_to_90",
+      "galileo_largest_ln_hc_l_95_to_100",
+      "galileo_largest_ln_reac_l_95_to_100",
+      "galileo_random_100_to_105",
+      "galileo_random_l_95_to_100",
+      "galileo_smallest_ln_hc_l_100_to_105",
+      "galileo_smallest_ln_hc_l_85_to_90",
+      "galileo_smallest_ln_hc_l_95_to_100",
+      "galileo_smallest_ln_reac_l_95_to_100",
+      "galileo_small_lib_1",
+      "galileo_small_lib_2"
+    ],
+    "dir-summary": "",
+    "dir-keywords": [
+      "deep-learning",
+      "tertiary-contact-prediction"
+    ],
+    "dir-finished": "YES",
+    "dir-constructs-ordered": "YES",
+    "project": "tertiary-contact-prediction"
+  },
+  "2023_07_10_atp_ttr_remake": {
+    "date": "2023-07-10",
+    "year": "2023",
+    "week": "2023-29",
+    "type": "dir",
+    "path": "$DROPBOX/projects/construct_design/2023_07_10_atp_ttr_remake",
+    "dir-type": "construct-design",
+    "dir-designed-by": "Joe Yesselman",
+    "dir-constructs-codes": [
+      "C0167",
+      "C0168",
+      "C0169",
+      "C016A",
+      "C016B",
+      "C016C",
+      "C016D",
+      "C016E",
+      "C016F"
+    ],
+    "dir-constructs": [
+      "atp_ttr_1",
+      "atp_ttr_2",
+      "atp_ttr_4",
+      "atp_ttr_5",
+      "atp_ttr_6",
+      "atp_ttr_7",
+      "atp_ttr_8",
+      "atp_ttr_9",
+      "atp_ttr_10"
+    ],
+    "dir-summary": "Remaking constructs from nature nanotech paper to test",
+    "dir-keywords": [
+      "aptamers",
+      "aptamer-stabilization"
+    ],
+    "project": "aptamers",
+    "dir-finished": "YES",
+    "dir-constructs-ordered": "YES"
+  },
+  "2023_03_08_atp_ttr_designs": {
+    "date": "2023-03-08",
+    "year": "2023",
+    "week": "2023-10",
+    "type": "dir",
+    "path": "$DROPBOX/projects/construct_design/2023_03_08_atp_ttr_designs",
+    "dir-type": "construct-design",
+    "designed-constructs-codes": [],
+    "designed-constructs": [],
+    "designed-by": [],
+    "project": "aptamer-design",
+    "dir-designed-by": "Joe Yesselman",
+    "dir-constructs-codes": [
+      "C014K",
+      "C014L",
+      "C014M",
+      "C014N",
+      "C014P",
+      "C014Q",
+      "C014R",
+      "C014S",
+      "C014T"
+    ],
+    "dir-constructs": [
+      "atp_ttr_3",
+      "atp_ttr_3_uucg",
+      "atp_ttr_3_no_tlr",
+      "atp_ttr_3_no_motif_2",
+      "atp_ttr_3_no_motif_3",
+      "atp_ttr_3_h1_3bp_longer",
+      "atp_ttr_3_h2_3bp_longer",
+      "atp_ttr_3_h3_3bp_longer",
+      "atp_ttr_3_h4_3bp_longer"
+    ],
+    "dir-summary": "aptamer",
+    "dir-keywords": [
+      "aptamer"
+    ],
+    "dir-finished": "NO",
+    "dir-constructs-ordered": "YES"
+  },
+  "2023_07_11_nanostructure_chaperone": {
+    "date": "2023-07-11",
+    "year": "2023",
+    "week": "2023-29",
+    "type": "dir",
+    "path": "$DROPBOX/projects/construct_design/2023_07_11_nanostructure_chaperone",
+    "dir-type": "construct-design",
+    "dir-designed-by": "Joe Yesselman",
+    "dir-constructs-codes": [
+      "C016G",
+      "C016H",
+      "C016I",
+      "C016J",
+      "C016K",
+      "C016L"
+    ],
+    "dir-constructs": [
+      "2H_AO_SC",
+      "2H_AO_A",
+      "2H_AO_B",
+      "2H_AO_C",
+      "2H_AO_SC_uucg",
+      "2H_AO_SC_cm"
+    ],
+    "dir-summary": "An initial look at using Cody Gearys nanostructures as a way to chaperone proteins using Scotts assays.",
+    "dir-keywords": [
+      "nanostructures,",
+      "horowitz"
+    ],
+    "project": "rna-chaperones",
+    "dir-constructs-ordered": "YES",
+    "dir-finished": "YES"
+  },
+  "2023_05_18_hairpin_deeplearning_v2": {
+    "date": "2023-05-18",
+    "year": "2023",
+    "week": "2023-21",
+    "type": "dir",
+    "path": "$DROPBOX/projects/construct_design/2023_05_18_hairpin_deeplearning_v2",
+    "dir-type": "construct-design",
+    "dir-designed-by": "Joe Yesselman",
+    "dir-constructs-codes": [
+      "C014U",
+      "C014V"
+    ],
+    "dir-constructs": [
+      "hp_deeplearning_60000_1",
+      "hp_deeplearning_60000_2"
+    ],
+    "dir-summary": "",
+    "dir-keywords": [
+      "deep-learning"
+    ],
+    "project": "ss-deep-learning",
+    "dir-finished": "YES",
+    "dir-constructs-ordered": "YES"
+  },
+  "2022_12_06_kl_4way_design": {
+    "date": "2022-12-06",
+    "year": "2022",
+    "week": "2022-50",
+    "type": "dir",
+    "path": "$DROPBOX/projects/construct_design/2022/2022_12_06_kl_4way_design",
+    "dir-type": "construct-design",
+    "dir-designed-by": "Sakshi Jain",
+    "dir-constructs-codes": [
+      "C012U",
+      "C012V",
+      "C012W",
+      "C012X",
+      "C012Y",
+      "C012Z",
+      "C0131",
+      "C0132",
+      "C0133",
+      "C0134",
+      "C0135"
+    ],
+    "dir-constructs": [
+      "PtrKL",
+      "PurR1BPKL",
+      "PtrR2BPKL",
+      "PurA1BPKL",
+      "PtrA2BPKL",
+      "PurB1BPKL",
+      "PtrB2BPKL",
+      "PurB3BPKL",
+      "PtrB4BPKL",
+      "PurB5BPKL",
+      "PtrB6BPKL"
+    ],
+    "dir-summary": "This folder was to help sakshi design the first kissing loop constructs",
+    "dir-keywords": "",
+    "dir-finished": "YES",
+    "dir-constructs-ordered": "YES",
+    "project": "kissing-loop"
+  },
+  "2022_11_05_larger_ires_prediction": {
+    "date": "2022-11-05",
+    "year": "2022",
+    "week": "2022-45",
+    "type": "dir",
+    "path": "$DROPBOX/projects/construct_design/2022/2022_11_05_larger_ires_prediction",
+    "dir-type": "construct-design",
+    "dir-designed-by": "Joe Yesselman",
+    "dir-constructs-codes": [],
+    "dir-constructs": [],
+    "dir-summary": "Tests in making IRES constructs with more than 2 IRES",
+    "dir-keywords": "",
+    "dir-finished": "NO",
+    "dir-constructs-ordered": "NO",
+    "project": "motif-ensemble"
+  },
+  "2022_11_18_predictor80": {
+    "date": "2022-11-18",
+    "year": "2022",
+    "week": "2022-47",
+    "type": "dir",
+    "path": "$DROPBOX/projects/construct_design/2022/2022_11_18_predictor80",
+    "dir-type": "construct-design",
+    "dir-designed-by": "Dan Linford",
+    "dir-constructs-codes": [
+      "C0136",
+      "C0137",
+      "C0138",
+      "C0139"
+    ],
+    "dir-constructs": [
+      "predictor80_lib_1",
+      "predictor80_lib_2",
+      "predictor80_lib_4",
+      "predictor80_lib_5"
+    ],
+    "dir-summary": "",
+    "dir-keywords": "",
+    "dir-finished": "YES",
+    "dir-constructs-ordered": "YES",
+    "project": "tertiary-contact-prediction"
+  },
+  "2023_07_05_mttr6_ires_scan": {
+    "date": "2023-07-05",
+    "year": "2023",
+    "week": "2023-27",
+    "type": "dir",
+    "path": "$DROPBOX/projects/construct_design/2023_07_05_mttr6_ires_scan",
+    "dir-type": "construct-design",
+    "project": "mttr6",
+    "dir-designed-by": "Joe Yesselman",
+    "dir-constructs-codes": [
+      "C015D",
+      "C015E"
+    ],
+    "dir-constructs": [
+      "mttr6_ires_muts",
+      "mttr6_ires_muts_no_tlr"
+    ],
+    "dir-summary": "Scanning potential IRES sequences that works in the mttr6 scaffold",
+    "dir-keywords": [
+      "mttr6",
+      "rna-nanostructures"
+    ],
+    "dir-finished": "YES",
+    "dir-constructs-ordered": "NO"
+  },
+  "2022_12_15_mttr6_mg2_controls": {
+    "date": "2022-12-15",
+    "year": "2022",
+    "week": "2022-51",
+    "type": "dir",
+    "path": "$DROPBOX/projects/construct_design/2022/2022_12_15_mttr6_mg2_controls",
+    "dir-type": "construct-design",
+    "dir-designed-by": "Joe Yesselman",
+    "dir-constructs-codes": [
+      "C013S",
+      "C013T",
+      "C013U",
+      "C013V",
+      "C013W",
+      "C013X",
+      "C013Y"
+    ],
+    "dir-constructs": [
+      "minittr_6_uucg_fixed",
+      "minittr_6_no_tlr_fixed",
+      "minittr_6_no_ires_fixed",
+      "minittr_6_no_3_3_junc_fixed",
+      "minittr_6_h1_3bp_longer_fixed",
+      "minittr_6_h2_3bp_longer_fixed",
+      "minittr_6_h3_3bp_longer_fixed"
+    ],
+    "dir-summary": "",
+    "dir-keywords": "",
+    "dir-finished": "YES",
+    "dir-constructs-ordered": "YES",
+    "project": "q-dms-mapseq"
+  },
+  "2023_06_14_mttr6_3x3_scan": {
+    "date": "2023-06-18",
+    "year": "2023",
+    "week": "2023-24",
+    "type": "dir",
+    "path": "$DROPBOX/projects/construct_design/2023_06_14_mttr6_3x3_scan",
+    "dir-type": "",
+    "summary": "",
+    "project": "",
+    "dir-designed-by": "Joe Yesselman",
+    "dir-constructs-codes": [
+      "C015B",
+      "C015C"
+    ],
+    "dir-constructs": [
+      "mttr6_3x3_muts",
+      "mttr6_3x3_muts_no_tlr"
+    ],
+    "dir-summary": "",
+    "dir-keywords": "",
+    "dir-finished": "YES",
+    "dir-constructs-ordered": "NO"
+  },
+  "2023_06_14_mttr6_kink_turn_scan": {
+    "date": "2023-06-14",
+    "year": "2023",
+    "week": "2023-23",
+    "type": "dir",
+    "path": "$DROPBOX/projects/construct_design/2023_06_14_mttr6_kink_turn_scan",
+    "dir-type": "construct-design",
+    "project": "mttr6",
+    "dir-designed-by": "Joe Yesselman",
+    "dir-constructs-codes": [
+      "C0154",
+      "C0155"
+    ],
+    "dir-constructs": [
+      "mttr6_kink_turn_muts",
+      "mttr6_kink_turn_muts_no_tlr"
+    ],
+    "dir-summary": "",
+    "dir-keywords": "",
+    "dir-finished": "YES",
+    "dir-constructs-ordered": "YES"
+  },
+  "2023_07_02_tar_minittrs_v2": {
+    "date": "2023-07-06",
+    "year": "2023",
+    "week": "2023-27",
+    "type": "dir",
+    "path": "$DROPBOX/projects/construct_design/2023_07_02_tar_minittrs_v2",
+    "dir_type": "contruct-design",
+    "project": "motif-ensemble",
+    "dir-type": "construct-design",
+    "dir-designed-by": "Joe Yesselman",
+    "dir-constructs-codes": [
+      "C015F",
+      "C015G",
+      "C015H",
+      "C015I",
+      "C015J",
+      "C015K",
+      "C015L",
+      "C015M",
+      "C015N",
+      "C015P",
+      "C015Q",
+      "C015R",
+      "C015S",
+      "C015T",
+      "C015U",
+      "C015V"
+    ],
+    "dir-constructs": [
+      "mttr_tar_len_100",
+      "mttr_tar_len_105",
+      "mttr_tar_len_110",
+      "mttr_tar_len_115",
+      "mttr_tar_len_120",
+      "mttr_tar_len_125",
+      "mttr_tar_len_130",
+      "mttr_tar_len_135",
+      "mttr_tar_len_140",
+      "mttr_tar_len_145",
+      "mttr_tar_len_150",
+      "mttr_tar_len_155",
+      "mttr_tar_len_160",
+      "mttr_tar_len_85",
+      "mttr_tar_len_90",
+      "mttr_tar_len_95"
+    ],
+    "dir-summary": "Initial tests to insert HIV-1 TAR into minittrs to attempt to measure their motif ensemble",
+    "dir-keywords": [
+      "motif-ensemble",
+      "minittr",
+      "tar"
+    ],
+    "dir-finished": "YES",
+    "dir-constructs-ordered": "YES"
+  },
+  "2023_02_15_mttr6_mut_scans": {
+    "date": "2023-02-15",
+    "year": "2023",
+    "week": "2023-8",
+    "type": "dir",
+    "path": "$DROPBOX/projects/construct_design/2023_02_15_mttr6_mut_scans",
+    "dir-type": "construct-design",
+    "project": "mttr6",
+    "dir-designed-by": "Joe Yesselman",
+    "dir-constructs-codes": [
+      "C0142",
+      "C0143"
+    ],
+    "dir-constructs": [
+      "mttr6_mut_scans",
+      "mttr6_mut_scans_uucg"
+    ],
+    "dir-summary": "",
+    "dir-keywords": "",
+    "dir-finished": "YES",
+    "dir-constructs-ordered": "YES"
+  },
+  "2022_10_31_more_5_0_juncs_ires_pools": {
+    "date": "2022-10-31",
+    "year": "2022",
+    "week": "2022-45",
+    "type": "dir",
+    "path": "$DROPBOX/projects/construct_design/2022/2022_10_31_more_5_0_juncs_ires_pools",
+    "dir-type": "construct-design",
+    "dir-designed-by": "Joe Yesselman",
+    "dir-constructs-codes": [
+      "C013E",
+      "C013F",
+      "C013G",
+      "C013H",
+      "C013I",
+      "C013J"
+    ],
+    "dir-constructs": [
+      "other_5_0_minittrs_1",
+      "other_5_0_minittrs_1_no_tlr",
+      "other_5_0_minittrs_1_uucg",
+      "other_5_0_minittrs_2",
+      "other_5_0_minittrs_2_no_tlr",
+      "other_5_0_minittrs_2_uucg"
+    ],
+    "dir-summary": "",
+    "dir-keywords": "",
+    "dir-finished": "YES",
+    "dir-constructs-ordered": "YES",
+    "project": "motif-ensemble"
+  },
+  "2022_12_08_large_ires_lib_diff_sizes_2": {
+    "date": "2022-12-08",
+    "year": "2022",
+    "week": "2022-50",
+    "type": "dir",
+    "path": "$DROPBOX/projects/construct_design/2022/2022_12_08_large_ires_lib_diff_sizes_2",
+    "dir-type": "construct-design",
+    "dir-designed-by": "Joe Yesselman",
+    "dir-constructs-codes": [
+      "C012Q",
+      "C012R",
+      "C012S",
+      "C012T"
+    ],
+    "dir-constructs": [
+      "ires_short_agilent_lib_uucg",
+      "ires_short_agilent_lib_notlr",
+      "ires_longer_agilent_lib_uucg",
+      "ires_longer_agilent_lib_notlr"
+    ],
+    "dir-summary": "",
+    "dir-keywords": "",
+    "dir-finished": "YES",
+    "dir-constructs-ordered": "YES",
+    "project": ""
+  }
+}
