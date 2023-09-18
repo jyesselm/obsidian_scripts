@@ -28,6 +28,7 @@ def generate_daily_note(dir_path, date):
     txt = ""
     metadata = {
         "type": "daily",
+        "tags": "#daily",
     }
     add_dates_to_metadata(metadata, date)
     txt += get_metadata_str(metadata) + "\n"

@@ -1,6 +1,8 @@
 from pathlib import Path
 from obsidian_scripts.logger import get_logger
 import re
+import yaml
+import datetime
 
 log = get_logger("MARKDOWN")
 
@@ -20,20 +22,11 @@ def extract_metadata(path):
     # no meta data found
     if len(sections) < 2:
         return {}
-    lines = sections[1].split("\n")
-    metadata = {}
-    for line in lines:
-        spl = line.split(":")
-        if len(spl) == 1 and len(spl[0]) == 0:
-            continue
-        key, value = spl
-        key = key.strip()
-        value = value.strip()
-        if value.find("[") == -1:
-            metadata[key] = value
-        else:
-            value = value[1:-1]
-            metadata[key] = value.split()
+    metadata = yaml.safe_load(sections[1])
+    if metadata is None:
+        return {}
+    if "date" in metadata:
+        metadata["date"] = metadata["date"].strftime("%Y-%m-%d")
     return metadata
 
 
@@ -80,9 +73,13 @@ def get_metadata_str(metadata):
         if key in seen_keys:
             continue
         if isinstance(value, list):
-            value = "[" + " ".join(value) + "]"
+            val_str = ""
+            for v in value:
+                val_str += f"\n  - {v}"
+            value = val_str
         txt += f"{key}: {value}\n"
     txt += f"---\n"
+    print(txt)
     return txt
 
 

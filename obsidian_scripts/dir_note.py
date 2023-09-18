@@ -85,6 +85,7 @@ class DirectoryNote:
             "dir-finished": "NO",
             "dir-constructs-ordered": "NO",
             "project": "",
+            "tags": "\n  - #dir/construct-design",
         }
         if len(constructs) > 0:
             metadata["dir-constructs-ordered"] = "YES"
