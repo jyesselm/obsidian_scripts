@@ -18,6 +18,7 @@ from obsidian_scripts.dir_note import DirectoryNote
 from obsidian_scripts.sequencing_run_note import SequencingRunNote
 from obsidian_scripts.parameters import get_parameters
 from obsidian_scripts.paths import LIB_DIR
+from obsidian_scripts.markdown import extract_markdown_section
 
 from gsheets.sheet import get_sequence_sheet, get_primer_assembly_sheet
 
@@ -151,6 +152,44 @@ def update_sequence_run_notes():
         print(os.path.basename(dd))
         srn = SequencingRunNote(dd)
         srn.write_note()
+
+
+@cli.command()
+@click.argument("days")
+def collect_tasks(days):
+    setup_applevel_logger()
+    end_date = datetime.date.today()
+    start_date = end_date - datetime.timedelta(days=int(days))
+    params = get_parameters()
+    cur_year = datetime.date.today().year
+    dir_path = f"/Users/jyesselman2/Dropbox/notes/daily/"
+    all_daily_files = glob.glob(f"{dir_path}/*/daily/*.md")
+    # create dictionary with the data to file path
+    daily_files = {}
+    for f in all_daily_files:
+        date_str = os.path.basename(f).replace(".md", "")
+        daily_files[date_str] = f
+    final_path = f"/Users/jyesselman2/Dropbox/notes/todo/summary.md"
+    f = open(final_path, "w")
+    f.write(
+        f"# Tasks from {start_date.strftime('%Y-%m-%d')} to {end_date.strftime('%Y-%m-%d')}\n\n"
+    )
+    for i in range(int(days)):
+        date = start_date + datetime.timedelta(days=i)
+        date_str = date.strftime("%Y-%m-%d")
+        fpath = daily_files[date_str]
+        txt = extract_markdown_section(fpath, "## reminders")
+        lines = txt.split("\n")
+        task_lines = []
+        for line in lines:
+            if line.startswith("- [ ]"):
+                task_lines.append(line)
+        if len(task_lines) == 0:
+            continue
+        f.write(f"## {date_str}\n\n")
+        for line in task_lines:
+            f.write(line + "\n")
+    f.close()
 
 
 if __name__ == "__main__":
