@@ -6,6 +6,7 @@ import json
 from pathlib import Path
 import pandas as pd
 from tabulate import tabulate
+import pyperclip
 
 from obsidian_scripts.logger import get_logger, setup_applevel_logger
 from obsidian_scripts.markdown import (
@@ -58,7 +59,8 @@ def add_missing_daily():
     # Define your start date as one year before the current date
     start_date = datetime.date(end_date.year, 1, 1)
     # Define your directory path
-    dir_path = "/Users/jyesselman2/Dropbox/notes/daily/2023/daily/"
+    cur_year = datetime.date.today().year
+    dir_path = f"/Users/jyesselman2/Dropbox/notes/daily/{cur_year}/daily/"
     # Iterate from start_date to end_date
     delta = datetime.timedelta(days=1)
     while start_date < end_date:
@@ -181,15 +183,65 @@ def collect_tasks(days):
         txt = extract_markdown_section(fpath, "## reminders")
         lines = txt.split("\n")
         task_lines = []
+        new_lines = []
+        in_reminders_section = False
         for line in lines:
-            if line.startswith("- [ ]"):
+            if line.startswith("## reminders"):
+                in_reminders_section = True
+                new_lines.append(line)
+                continue
+            if in_reminders_section and line.startswith("##"):
+                in_reminders_section = False
+            if in_reminders_section and line.startswith("- [ ]"):
                 task_lines.append(line)
+            elif not in_reminders_section or not line.startswith("- [ ]"):
+                new_lines.append(line)
         if len(task_lines) == 0:
             continue
         f.write(f"## {date_str}\n\n")
         for line in task_lines:
             f.write(line + "\n")
-    f.close()
+        # Write the updated content back to the file
+        with open(fpath, "w") as daily_file:
+            daily_file.write("\n".join(new_lines))
+
+
+@cli.command()
+@click.argument("title")
+@click.option("-t", "--tags", help="The tags for the snippet", default="")
+@click.option("-l", "--language", help="The language of the code", default="python")
+@click.option("--file", help="The file to read the code from", default=None)
+@click.option("-k", "--keywords", help="The keywords for the snippet", default="")
+def snippet(title, tags, language, file, keywords):
+    setup_applevel_logger()
+    if file is None:
+        log.info("Reading from clipboard")
+        text = pyperclip.paste()
+    else:
+        with open(file, "r") as f:
+            text = f.read()
+    metadata = {
+        "type": "snippet",
+        "tags": ["snippet"],
+        "language": language,
+        "keywords": [],
+    }
+    if len(tags) > 0:
+        tags = tags.split(",")
+        tags = [f"#{t}" for t in tags]
+        metadata["tags"].append(tags)
+    if len(keywords) > 0:
+        keywords = keywords.split(",")
+        metadata["keywords"] = keywords
+    metadata = add_dates_to_metadata(metadata, datetime.datetime.now())
+    metadata_txt = get_metadata_str(metadata)
+    path = f"/Users/jyesselman2/Dropbox/notes/capture/snippets/{language}/{title}.md"
+    txt = metadata_txt + "\n" + "# " + title + f"\n\n```{language}\n" + text + "\n```"
+    with open(path, "w") as f:
+        f.write(txt)
+    log.info(f"Snippet saved to {path}")
+    log.info(f"Metadata: {metadata}")
+    log.info(f"Text: {text}")
 
 
 if __name__ == "__main__":
